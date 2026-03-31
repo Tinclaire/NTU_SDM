@@ -1,6 +1,8 @@
+import type { Course } from "./course";
+
 export interface EnrollmentDetail {
-  id: string;
+  studentId: string;
   name: string;
   semester: string;
-  courses: string[];
+  courses: Course[];
 }

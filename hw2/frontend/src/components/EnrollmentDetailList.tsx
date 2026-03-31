@@ -4,7 +4,7 @@ interface EnrollmentDetailProps {
   detail: EnrollmentDetail;
 }
 
-export function EnrollmentDetail({ detail }: EnrollmentDetailProps) {
+export function EnrollmentDetailList({ detail }: EnrollmentDetailProps) {
   return (
     <>
       <div className="mt-32 flex justify-center">
@@ -20,14 +20,14 @@ export function EnrollmentDetail({ detail }: EnrollmentDetailProps) {
                 <tr>
                   <td className="p-3 border-t">ID/name</td>
                   <td className="p-3 border-t">
-                    {detail.id}/{detail.name}
+                    {detail.studentId} / {detail.name}
                   </td>
                 </tr>
                 <tr>
                   <td className="p-3 border-t">Courses</td>
                   <td className="p-3 border-t">
                     {detail.courses.map((course) => (
-                      <p key={course}>{course}</p>
+                      <p key={course.id}>{course.name}</p>
                     ))}
                   </td>
                 </tr>

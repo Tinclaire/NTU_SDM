@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 interface SearchBoxProps {
-  onSubmit: (name: string) => void;
+  onSubmit: (keyword: string) => void;
 }
 
 export function SearchBox({ onSubmit }: SearchBoxProps) {

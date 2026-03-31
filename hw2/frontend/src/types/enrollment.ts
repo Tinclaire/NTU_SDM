@@ -1,5 +1,6 @@
 export interface Enrollment {
-  id: string;
+  studentId: string;
   name: string;
-  semesters: string[];
+  // semesters: string[];
+  semester: string;
 }
